@@ -6,18 +6,30 @@ type memoryCellButtonProps = {
 };
 
 let chosenCellValue: string[] = [];
-let chosenCellElement: [] = [];
+let chosenCellElements: HTMLElement[] = [];
 
 const choseMemoryCell = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
   const cell = event.currentTarget.innerHTML;
+  const cellElement: HTMLElement = event.currentTarget;
+
   chosenCellValue.push(cell);
-  console.log(chosenCellValue);
+  chosenCellElements.push(cellElement);
+
+  console.log(chosenCellElements);
+
   if (chosenCellValue.length === 2 && chosenCellValue[1] === chosenCellValue[0]) {
-    console.log('You gat me');
+    //chnage styles for the chosen elements
+
+    //empty chosen cell values array
     chosenCellValue = [];
+    //change styles of chosen matching cells
+    chosenCellElements = [];
   } else if (chosenCellValue.length === 2 && chosenCellValue[1] !== chosenCellValue[0]) {
     console.log('Try again');
+    //empty chosen cell values array
     chosenCellValue = [];
+    //empty chosen cell elements array
+    chosenCellElements = [];
   }
 };
 
