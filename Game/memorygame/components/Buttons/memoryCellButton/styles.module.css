@@ -1,9 +1,0 @@
-.memoryCellButton {
-  width: 82px;
-  height: 82px;
-  border: none;
-  background: var(--medium-dark-blue);
-  border-radius: 41px;
-  color: var(--medium-dark-blue);
-  cursor: pointer;
-}
