@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap");
+
+:root {
+  --color-primary: #304859;
+  --color-primary-light: #bcced9;
+  --color-primary-dark: #152938;
+
+  --color-secondary-light: #6395b8;
+  --color-secondary-dark: #7191a5;
+
+  --color-grey-light: #f2f2f2;
+  --color-grey-light-2: #fcfcfc;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+
+/* Typography */
+
+.heading_primary {
+  font-family: "Atkinson Hyperlegible";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 6rem;
+}
+
+.heading_secondary {
+  font-family: "Atkinson Hyperlegible";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+
+.heading_tertiary {
+  font-family: "Atkinson Hyperlegible";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.small_grid_value {
+  font-family: "Atkinson Hyperlegible";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5.6rem;
+  line-height: 6.9rem;
+}
+
+.big_grid_value {
+  font-family: "Atkinson Hyperlegible";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.4rem;
+  line-height: 5.5rem;
+}
