@@ -1,6 +1,7 @@
 import Head from "next/head";
 import "../assets/styles/shared-styles.css";
 import { ButtonPrimary } from "../components/buttons/button-primary/ButtonPrimary";
+import { ButtonSecondary } from "../components/buttons/button-secondary/ButtonSecondary";
 import { Logo } from "../components/logo/Logo";
 
 export default function Home(): JSX.Element {
@@ -23,6 +24,9 @@ export default function Home(): JSX.Element {
         </nav>
         <main>
           <ButtonPrimary>Restart</ButtonPrimary>
+          <div>
+            <ButtonSecondary>New Game</ButtonSecondary>
+          </div>
         </main>
       </body>
     </>

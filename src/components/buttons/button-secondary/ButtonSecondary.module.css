@@ -1,0 +1,14 @@
+.btn-secondary {
+  margin: 0;
+  outline: 0;
+  border: 0;
+  background-color: var(--color-primary-light);
+  border-radius: 2.6rem;
+  padding: 1.4rem 1.6rem;
+  color: var(--color-grey-light-2);
+  margin-top: 1rem;
+}
+
+.btn-secondary:hover {
+  opacity: 0.8;
+}
