@@ -1,3 +1,4 @@
+import { GridContainer6X6 } from '../components/6X6GridContainer/6X6GridContainer';
 import { MemoryCellButton } from '../components/Buttons/memoryCellButton/MemoryCellButton';
 import { AnchorIcon } from '../components/Icons/anchor-icon/AnchorIcon';
 import styles from './styles.module.css';
@@ -5,10 +6,7 @@ import styles from './styles.module.css';
 export default function Home() {
   return (
     <div>
-      <MemoryCellButton buttonName="1" />
-      <MemoryCellButton buttonName="2" />
-      <MemoryCellButton buttonName="3" />
-      <MemoryCellButton buttonName="3" />
+      <GridContainer6X6 />
     </div>
   );
 }

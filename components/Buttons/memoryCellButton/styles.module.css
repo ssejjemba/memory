@@ -7,3 +7,16 @@
   color: var(--medium-dark-blue);
   cursor: pointer;
 }
+
+.revealed_memoryCell {
+  width: 82px;
+  height: 82px;
+  font-weight: 700;
+  font-size: 56px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: var(--lighter-cyan-blue);
+  color: #fcfcfc;
+  cursor: pointer;
+}
