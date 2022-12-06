@@ -1,6 +1,7 @@
 import Head from "next/head";
 import "../assets/styles/shared-styles.css";
 import { ButtonPrimary } from "../components/buttons/button-primary/ButtonPrimary";
+import { Logo } from "../components/logo/Logo";
 
 export default function Home(): JSX.Element {
   return (
@@ -17,6 +18,9 @@ export default function Home(): JSX.Element {
         <title>Memory Game</title>
       </Head>
       <body>
+        <nav>
+          <Logo />
+        </nav>
         <main>
           <ButtonPrimary>Restart</ButtonPrimary>
         </main>
