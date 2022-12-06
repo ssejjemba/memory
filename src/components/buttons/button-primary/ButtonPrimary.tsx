@@ -9,7 +9,7 @@ export const ButtonPrimary = (props: ButtonPrimaryProps): JSX.Element => {
   return (
     <button
       type="button"
-      test-id="primary-btn"
+      data-testid="primary-btn"
       className={`${styles["btn-primary"]} heading_tertiary`}
     >
       {props.children}
