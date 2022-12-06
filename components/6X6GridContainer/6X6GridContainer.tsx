@@ -1,5 +1,5 @@
 import React from 'react';
-import { MemoryCellButton } from '../Buttons/memoryCellButton/MemoryCellButton';
+import { MemoryCellButton } from '../Buttons/memoryCell/MemoryCellButton';
 import styles from './styles.module.css';
 
 export const GridContainer6X6 = () => {

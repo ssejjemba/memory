@@ -1,15 +1,10 @@
-import React, { MouseEventHandler } from 'react';
-import styles from './styles.module.css';
-
-type memoryCellButtonProps = {
-  buttonName: string;
-  id: string;
-};
-
 let chosenCellValue: string[] = [];
 let chosenCellElements: string[] = [];
 
-const choseMemoryCell = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+export const choseMemoryCell = (
+  event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+  chosenstyles: string,
+) => {
   const cell = event.currentTarget.innerHTML;
   const cellElementid: string = event.currentTarget.id;
 
@@ -30,8 +25,8 @@ const choseMemoryCell = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>)
     // firstChosenCell?.classList.remove(`${styles.revealed_memoryCell}`);
     // secondChosenCell?.classList.remove(`${styles.revealed_memoryCell}`);
 
-    firstChosenCell?.classList.add(`${styles.revealed_memoryCell}`);
-    secondChosenCell?.classList.add(`${styles.revealed_memoryCell}`);
+    firstChosenCell?.classList.add(chosenstyles);
+    secondChosenCell?.classList.add(chosenstyles);
 
     //empty chosen cell values array
     chosenCellValue = [];
@@ -44,21 +39,4 @@ const choseMemoryCell = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>)
     //empty chosen cell elements array
     chosenCellElements = [];
   }
-};
-
-export const MemoryCellButton = (props: memoryCellButtonProps) => {
-  const { buttonName, id } = props;
-
-  return (
-    <button
-      data-testid="button_element"
-      className={styles.memoryCellButton}
-      onClick={(event: React.MouseEvent<HTMLButtonElement, MouseEvent>): void => {
-        choseMemoryCell(event);
-      }}
-      id={id}
-    >
-      {buttonName}
-    </button>
-  );
 };
