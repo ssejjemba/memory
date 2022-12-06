@@ -18,9 +18,9 @@ This is a solution to the [Memory game challenge on Frontend Mentor](https://www
   - [Author](#author)
   - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
+
+This project will be an excellent test for your HTML, CSS, and JS skills! You'll be building a fun memory game where players try to match pairs.
 
 ### The challenge
 
@@ -36,14 +36,6 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
@@ -51,22 +43,27 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
+- I started the memory game project repository by choosing which technologies and libraries am going to need to accomplish the challenge. I decided to do the project in **Next.js** and **Typescript** as Next.js provides an easy way to architect your code & server-side rendering is handled best in Next.js as for Typescript provides me with some strict guidelines that helps me avoid / reduce bugs in my code as am developing my Game App.
+
+- Since I was new to Next.js because this is my very first project using Next.js, I heavily relied on the Next.js docs [Next.js](https://nextjs.org/) to configure the App routes and Typescript configuration. Then to also get a solid understanding on how I can architect my project repository by studying carefully the files and folder architect boiler plate that comes by default by running the `npx create-next-app`.
+
+- After getting a solid understanding of the pattern to follow in a Next.js project, I deleted everything and began on a clean sheet to architect my project and since am following the **MVP**(_Model View Bussiness Logic_). I decided to place my models in different `.tsx` files and split code into small re-usable components.
+
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
+- Desktop-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- [TypeSript](https://www.typescriptlang.org/) - TypeScript
+- [Eslint](https://eslint.org/) - Eslint
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned so much about **Next.js** and most important of all I learnt how to add tests in a next.js project which was tricky innitially, because I was using wrong resources to assist me configure my jest file but after a while I went to official _Next.js_ docs and it surely hepled configure my `jest.config.ts` file that made running the test command pass all my tests.
 
 To see how you can add code snippets, see below:
 
