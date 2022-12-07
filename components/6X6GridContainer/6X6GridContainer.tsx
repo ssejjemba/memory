@@ -1,6 +1,7 @@
 import React from 'react';
 import { MemoryCellButton } from '../Buttons/memoryCell/MemoryCellButton';
 import {
+  choseMemoryCell,
   generateRandomNumberPairs,
   generateShuffleNumbers,
 } from '../../Utils/helpers/MemoryCell.helpers';
@@ -16,5 +17,5 @@ const listItems = shuffledNumbers.map((item, index) => {
 });
 
 export const GridContainer6X6 = () => {
-  return <div className={styles.grid_container6X6}>{listItems}</div>;
+  return <div className={styles.grid_container}>{listItems}</div>;
 };
