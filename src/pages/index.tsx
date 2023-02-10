@@ -19,9 +19,8 @@ export default function Home(): JSX.Element {
       </Head>
 
       <main>
-        <nav>
-          <Logo />
-        </nav>
+        <Logo />
+
         <ButtonPrimary>Restart</ButtonPrimary>
         <div>
           <ButtonSecondary>New Game</ButtonSecondary>
