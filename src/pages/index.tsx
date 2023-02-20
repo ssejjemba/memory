@@ -3,6 +3,8 @@ import { ButtonPrimary } from "../components/buttons/button-primary/ButtonPrimar
 import { ButtonSecondary } from "../components/buttons/button-secondary/ButtonSecondary";
 import { Logo } from "../components/logo/Logo";
 
+import classes from "../styles/start.module.css";
+
 export default function Home(): JSX.Element {
   return (
     <div>
@@ -18,21 +20,21 @@ export default function Home(): JSX.Element {
         <title>Memory Game</title>
       </Head>
 
-      <div className="start-screen">
-        <Logo />
+      <div className={classes["start-screen"]}>
+        <Logo class="start-logo" />
 
-        <div className="game-settings">
-          <div className="theme">
-            <h2 className="theme-title">Theme</h2>
-            <div className="theme-buttons">
+        <div className={classes["game-settings"]}>
+          <div className={classes["theme"]}>
+            <h2 className={classes["settings-heading"]}>Theme</h2>
+            <div className={classes["theme-buttons"]}>
               <ButtonSecondary>Numbers</ButtonSecondary>
               <ButtonSecondary>Icons</ButtonSecondary>
             </div>
           </div>
 
-          <div className="players-number">
-            <h2 className="players-number--title">Number of Players</h2>
-            <div className="players-number--buttons">
+          <div className={classes["players-number"]}>
+            <h2 className={classes["settings-heading"]}>Number of Players</h2>
+            <div className={classes["players-number--buttons"]}>
               <ButtonSecondary>1</ButtonSecondary>
               <ButtonSecondary>2</ButtonSecondary>
               <ButtonSecondary>3</ButtonSecondary>
@@ -40,15 +42,15 @@ export default function Home(): JSX.Element {
             </div>
           </div>
 
-          <div className="grid-size">
-            <h2 className="grid-size--title">Grid size</h2>
-            <div className="grid-size--buttons">
+          <div className={classes["grid-size"]}>
+            <h2 className={classes["settings-heading"]}>Grid size</h2>
+            <div className={classes["grid-size--buttons"]}>
               <ButtonSecondary>4 x 4</ButtonSecondary>
               <ButtonSecondary>6 x 6</ButtonSecondary>
             </div>
           </div>
 
-          <div className="start-btn--case">
+          <div className={classes["start-btn--case"]}>
             <ButtonPrimary>Start Game</ButtonPrimary>
           </div>
         </div>
