@@ -18,14 +18,41 @@ export default function Home(): JSX.Element {
         <title>Memory Game</title>
       </Head>
 
-      <main>
+      <div className="start-screen">
         <Logo />
 
-        <ButtonPrimary>Restart</ButtonPrimary>
-        <div>
-          <ButtonSecondary>New Game</ButtonSecondary>
+        <div className="game-settings">
+          <div className="theme">
+            <h2 className="theme-title">Theme</h2>
+            <div className="theme-buttons">
+              <ButtonSecondary>Numbers</ButtonSecondary>
+              <ButtonSecondary>Icons</ButtonSecondary>
+            </div>
+          </div>
+
+          <div className="players-number">
+            <h2 className="players-number--title">Number of Players</h2>
+            <div className="players-number--buttons">
+              <ButtonSecondary>1</ButtonSecondary>
+              <ButtonSecondary>2</ButtonSecondary>
+              <ButtonSecondary>3</ButtonSecondary>
+              <ButtonSecondary>4</ButtonSecondary>
+            </div>
+          </div>
+
+          <div className="grid-size">
+            <h2 className="grid-size--title">Grid size</h2>
+            <div className="grid-size--buttons">
+              <ButtonSecondary>4 x 4</ButtonSecondary>
+              <ButtonSecondary>6 x 6</ButtonSecondary>
+            </div>
+          </div>
+
+          <div className="start-btn--case">
+            <ButtonPrimary>Start Game</ButtonPrimary>
+          </div>
         </div>
-      </main>
+      </div>
     </div>
   );
 }
