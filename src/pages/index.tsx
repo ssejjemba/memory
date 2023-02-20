@@ -3,9 +3,6 @@ import { ButtonPrimary } from "../components/buttons/button-primary/ButtonPrimar
 import { ButtonSecondary } from "../components/buttons/button-secondary/ButtonSecondary";
 import { Logo } from "../components/logo/Logo";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
-
 export default function Home(): JSX.Element {
   return (
     <div>
@@ -27,9 +24,6 @@ export default function Home(): JSX.Element {
         <ButtonPrimary>Restart</ButtonPrimary>
         <div>
           <ButtonSecondary>New Game</ButtonSecondary>
-        </div>
-        <div className="icon">
-          <FontAwesomeIcon icon={faCoffee}></FontAwesomeIcon>
         </div>
       </main>
     </div>
