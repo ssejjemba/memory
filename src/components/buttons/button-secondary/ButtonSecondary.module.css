@@ -9,6 +9,14 @@
   margin-top: 1rem;
 }
 
+.text-btn {
+  width: 25.6rem;
+}
+
+.number-btn {
+  width: 11.9rem;
+}
+
 .btn-secondary:hover {
   opacity: 0.8;
 }
