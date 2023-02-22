@@ -3,6 +3,7 @@ import styles from "./ButtonPrimary.module.css";
 
 type ButtonPrimaryProps = {
   children: React.ReactNode;
+  class: string;
 };
 
 export const ButtonPrimary = (props: ButtonPrimaryProps): JSX.Element => {
@@ -10,7 +11,9 @@ export const ButtonPrimary = (props: ButtonPrimaryProps): JSX.Element => {
     <button
       type="button"
       data-testid="primary-btn"
-      className={`${styles["btn-primary"]} heading_tertiary`}
+      className={`${styles["btn-primary"]} heading_tertiary ${
+        styles[props.class]
+      }`}
     >
       {props.children}
     </button>

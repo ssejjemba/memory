@@ -51,7 +51,7 @@ export default function Home(): JSX.Element {
           </div>
 
           <div className={classes["start-btn--case"]}>
-            <ButtonPrimary>Start Game</ButtonPrimary>
+            <ButtonPrimary class="start-btn">Start Game</ButtonPrimary>
           </div>
         </div>
       </div>
