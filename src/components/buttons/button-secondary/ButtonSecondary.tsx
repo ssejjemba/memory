@@ -3,6 +3,7 @@ import styles from "./ButtonSecondary.module.css";
 
 type ButtonSecondaryProps = {
   children: React.ReactNode;
+  class: string;
 };
 
 export const ButtonSecondary = (props: ButtonSecondaryProps): JSX.Element => {
@@ -10,7 +11,9 @@ export const ButtonSecondary = (props: ButtonSecondaryProps): JSX.Element => {
     <button
       type="button"
       data-testid="secondary-btn"
-      className={`${styles["btn-secondary"]} heading_tertiary`}
+      className={`${styles["btn-secondary"]} heading_tertiary ${
+        styles[props.class]
+      }`}
     >
       {props.children}
     </button>
