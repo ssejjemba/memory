@@ -33,8 +33,13 @@
   color: var(--color-secondary-dark);
 }
 
+.setting-case {
+  padding-bottom: 3.3rem;
+}
+
 .buttons-case {
   width: 100%;
+  padding-top: 1.6rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
