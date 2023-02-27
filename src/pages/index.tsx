@@ -24,16 +24,16 @@ export default function Home(): JSX.Element {
         <Logo class="start-logo" />
 
         <div className={classes["game-settings"]}>
-          <div className={classes["theme"]}>
-            <h2 className={classes["settings-heading"]}>Theme</h2>
+          <div className={classes["setting-case"]}>
+            <h2 className={classes["setting-heading"]}>Theme</h2>
             <div className={classes["buttons-case"]}>
               <ButtonSecondary class="text-btn">Numbers</ButtonSecondary>
               <ButtonSecondary class="text-btn">Icons</ButtonSecondary>
             </div>
           </div>
 
-          <div className={classes["players-number"]}>
-            <h2 className={classes["settings-heading"]}>Number of Players</h2>
+          <div className={classes["setting-case"]}>
+            <h2 className={classes["setting-heading"]}>Number of Players</h2>
             <div className={classes["buttons-case"]}>
               <ButtonSecondary class="number-btn">1</ButtonSecondary>
               <ButtonSecondary class="number-btn">2</ButtonSecondary>
@@ -42,8 +42,8 @@ export default function Home(): JSX.Element {
             </div>
           </div>
 
-          <div className={classes["grid-size"]}>
-            <h2 className={classes["settings-heading"]}>Grid size</h2>
+          <div className={classes["setting-case"]}>
+            <h2 className={classes["setting-heading"]}>Grid size</h2>
             <div className={classes["buttons-case"]}>
               <ButtonSecondary class="text-btn">4 x 4</ButtonSecondary>
               <ButtonSecondary class="text-btn">6 x 6</ButtonSecondary>
