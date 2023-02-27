@@ -21,3 +21,13 @@
   background-color: var(--color-secondary-light);
   opacity: 0.8;
 }
+
+@media (max-width: 600px) {
+  .text-btn {
+    width: 14.5rem;
+  }
+
+  .number-btn {
+    width: 6.5rem;
+  }
+}

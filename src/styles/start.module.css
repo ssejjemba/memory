@@ -54,3 +54,18 @@
 .start-btn--case {
   width: 100%;
 }
+
+@media (max-width: 600px) {
+  .game-settings {
+    max-width: 35rem;
+    padding: 2.6rem;
+  }
+
+  .setting-case {
+    padding-bottom: 3rem;
+  }
+
+  .buttons-case {
+    gap: 1rem;
+  }
+}
