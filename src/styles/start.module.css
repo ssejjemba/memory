@@ -12,6 +12,10 @@
   align-items: center;
 }
 
+.start-logo--box {
+  margin-bottom: 1.5rem;
+}
+
 .game-settings {
   max-width: 57rem;
   width: 100%;

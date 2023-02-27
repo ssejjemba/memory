@@ -21,7 +21,9 @@ export default function Home(): JSX.Element {
       </Head>
 
       <div className={classes["start-screen"]}>
-        <Logo class="start-logo" />
+        <div className={classes["start-logo--box"]}>
+          <Logo class="start-logo" />
+        </div>
 
         <div className={classes["game-settings"]}>
           <div className={classes["setting-case"]}>
