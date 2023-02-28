@@ -5,6 +5,8 @@ import { Logo } from "../components/logo/Logo";
 
 import classes from "../styles/start.module.css";
 
+import Link from "next/link";
+
 export default function Home(): JSX.Element {
   return (
     <div>
@@ -53,7 +55,9 @@ export default function Home(): JSX.Element {
           </div>
 
           <div className={classes["start-btn--case"]}>
-            <ButtonPrimary class="start-btn">Start Game</ButtonPrimary>
+            <Link href="/game">
+              <ButtonPrimary class="start-btn">Start Game</ButtonPrimary>
+            </Link>
           </div>
         </div>
       </div>
