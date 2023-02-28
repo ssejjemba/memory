@@ -3,7 +3,7 @@
   height: 4rem;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .logo {
@@ -11,7 +11,6 @@
   font-style: normal;
   font-weight: 700;
   font-size: 4rem;
-  line-height: 5rem;
 }
 
 .start-logo {

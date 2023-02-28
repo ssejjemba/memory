@@ -1,5 +1,5 @@
 import Head from "next/head";
-import classes from "../styles/start.module.css";
+import classes from "../styles/game.module.css";
 
 import Link from "next/link";
 import { Logo } from "../components/logo/Logo";
@@ -20,13 +20,13 @@ export default function Game(): JSX.Element {
         />
         <title>Memory Game</title>
       </Head>
-      <div className="game">
-        <div className="game-controls">
-          <div className="game-logo--box">
+      <div className={classes["game"]}>
+        <div className={classes["game-controls"]}>
+          <div className={classes["game-logo--box"]}>
             <Logo class="game-logo" />
           </div>
 
-          <div className="game-buttons">
+          <div className={classes["game-buttons"]}>
             <ButtonPrimary class="">Restart</ButtonPrimary>
             <ButtonSecondary class="">New Game</ButtonSecondary>
           </div>
