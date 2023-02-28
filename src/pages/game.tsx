@@ -20,7 +20,7 @@ export default function Game(): JSX.Element {
         />
         <title>Memory Game</title>
       </Head>
-      <div className={classes["game"]}>
+      <div className={classes["game-board"]}>
         <div className={classes["game-controls"]}>
           <div className={classes["game-logo--box"]}>
             <Logo class="game-logo" />
@@ -30,6 +30,13 @@ export default function Game(): JSX.Element {
             <ButtonPrimary class="">Restart</ButtonPrimary>
             <ButtonSecondary class="">New Game</ButtonSecondary>
           </div>
+        </div>
+
+        <div className={classes["game"]}>
+          <div className={classes["game-card"]}>&nbsp;</div>
+          <div className={classes["game-card"]}>&nbsp;</div>
+          <div className={classes["game-card"]}>&nbsp;</div>
+          <div className={classes["game-card"]}>&nbsp;</div>
         </div>
       </div>
     </div>
