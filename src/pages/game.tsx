@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Logo } from "../components/logo/Logo";
 import { ButtonPrimary } from "../components/buttons/button-primary/ButtonPrimary";
 import { ButtonSecondary } from "../components/buttons/button-secondary/ButtonSecondary";
+import { createBoardGrid } from "../utils/utils";
 
 export default function Game(): JSX.Element {
   return (
@@ -32,11 +33,12 @@ export default function Game(): JSX.Element {
           </div>
         </div>
 
-        <div className={classes["game"]}>
-          <div className={classes["game-card"]}>&nbsp;</div>
-          <div className={classes["game-card"]}>&nbsp;</div>
-          <div className={classes["game-card"]}>&nbsp;</div>
-          <div className={classes["game-card"]}>&nbsp;</div>
+        <div id="game" className={classes["game"]}>
+          {
+            !createBoardGrid(4).map((board) => (
+              <p key={createBoardGrid(4)[board]}>{board}</p>
+            ))
+          }
         </div>
       </div>
     </div>
