@@ -34,11 +34,17 @@ export default function Game(): JSX.Element {
         </div>
 
         <div id="game" className={classes["game"]}>
-          {
-            !createBoardGrid(4).map((board) => (
-              <p key={createBoardGrid(4)[board]}>{board}</p>
-            ))
-          }
+          {Array.from(createBoardGrid(2)).map((slot) => (
+            <div
+              key={
+                createBoardGrid(2).indexOf(slot) == -1
+                  ? Math.random() * 0.5
+                  : createBoardGrid(2).indexOf(slot)
+              }
+            >
+              {slot}
+            </div>
+          ))}
         </div>
       </div>
     </div>
