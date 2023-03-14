@@ -1,0 +1,33 @@
+{
+  "name": "memory-game",
+  "version": "1.0.0",
+  "description": "This is a game to test memory strength",
+  "main": "index.html",
+  "scripts": {
+    "test": "jest --watch",
+    "tsc:w": "tsc -w --outDir ./js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssejjemba/memory.git"
+  },
+  "keywords": [
+    "memory",
+    "game",
+    "javascript",
+    "datastructures",
+    "state",
+    "machine",
+    "clean-code"
+  ],
+  "author": "Daniel Ssejjemba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ssejjemba/memory/issues"
+  },
+  "homepage": "https://github.com/ssejjemba/memory#readme",
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "typescript": "^4.9.5"
+  }
+}
