@@ -7,6 +7,6 @@ export const createBoardGrid = (size: number) => {
       gameBoard.push(Card());
     }
   }
-  // console.log(gameBoard);
+  console.log(gameBoard);
   return gameBoard;
 };
