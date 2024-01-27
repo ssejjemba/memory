@@ -1,0 +1,33 @@
+.btn-secondary {
+  margin: 0;
+  outline: 0;
+  border: 0;
+  background-color: var(--color-primary-light);
+  border-radius: 2.6rem;
+  padding: 1.3rem 2.4rem 1.4rem;
+  color: var(--color-grey-light-2);
+  cursor: pointer;
+}
+
+.text-btn {
+  width: 22rem;
+}
+
+.number-btn {
+  width: 10rem;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-secondary-light);
+  opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+  .text-btn {
+    width: 14.5rem;
+  }
+
+  .number-btn {
+    width: 6.5rem;
+  }
+}

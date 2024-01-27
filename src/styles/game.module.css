@@ -1,0 +1,32 @@
+/* Game stylesheet */
+
+.game-board {
+  padding: 6.8rem 16.5rem 2rem;
+}
+
+.game-controls {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.game-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.6rem;
+}
+
+.game {
+  margin-top: 10.5rem;
+}
+
+.game-card {
+  width: 118px;
+  height: 118px;
+  background: #304859;
+  border-radius: 59px;
+}

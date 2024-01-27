@@ -1,0 +1,8 @@
+/* Game Card Styles */
+
+.game-card {
+  width: 118px;
+  height: 118px;
+  background: #304859;
+  border-radius: 59px;
+}

@@ -1,0 +1,18 @@
+.logo_box {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.logo {
+  font-family: "Atkinson Hyperlegible";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.start-logo {
+  color: var(--color-grey-light-2);
+}
